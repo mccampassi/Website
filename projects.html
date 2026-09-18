@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects | Marcela Campassi</title>
+<meta name="description" content="Engineering projects by Marcela Campassi: solar charging station, nuclear instrumentation, MEMS fabrication, embedded systems.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23153B50'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='%23E8C547' text-anchor='middle' font-weight='700'%3EMC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="index.html">Marcela Campassi</a>
+    <div class="nav-links">
+      <a href="index.html" >Home</a>
+      <a href="about.html" >About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="experience.html" >Experience</a>
+      <a href="contact.html" >Contact</a>
+    </div>
+  </div>
+</nav>
+<section class="page-top">
+  <div class="wrap">
+    <div class="sec-head">Projects</div>
+    <h1 class="page-h1">Projects</h1>
+    <div class="proj">
+
+      <div class="p-item">
+        <div class="p-meta">Senior Capstone<span class="yr">2026 &ndash; 2027</span></div>
+        <div class="p-body">
+          <h3>Solar-Assisted PEV Charging Station</h3>
+          <p>A five-person senior design team building an outdoor, solar-assisted charging station for personal electric vehicles (scooters, e-bikes, e-skateboards), meant to give students a sanctioned outdoor place to charge instead of indoors. Our working model pairs a solar emulator, charge controller, battery, and inverter to deliver standard 120&nbsp;V at two ground-fault-protected outlets, falling back to grid power when the battery runs low. A microcontroller meters voltage, current, and temperature to track energy per session, tied to a QR-code login, pay-per-charge flow, and phone receipt. I lead the measurement and instrumentation subsystem, which reads voltage, current, and temperature at the battery and outlets so the controller can track energy delivered and detect when a vehicle stops drawing power.</p>
+          <div class="tags"><span class="tag">power electronics</span><span class="tag">embedded C</span><span class="tag">sensing &amp; metering</span><span class="tag">PCB design</span></div>
+        </div>
+      </div>
+
+      <div class="p-item">
+        <div class="p-meta">Entergy Nuclear<span class="yr">I&amp;C Internship</span></div>
+        <div class="p-body">
+          <h3>Instrument Drift &amp; Setpoint Analysis</h3>
+          <p>Supported instrument drift and setpoint calculations for a nuclear fleet transitioning from 18- to 24-month refueling cycles, where instruments must stay within tolerance over longer intervals. Earned my Calculation Qualification by completing 42 engineering calculations, and built an AI-assisted data-extraction tool to speed up pulling values from calculation documents.</p>
+          <div class="tags"><span class="tag">instrumentation</span><span class="tag">uncertainty analysis</span><span class="tag">Python</span><span class="tag">AI/LLM tooling</span></div>
+        </div>
+      </div>
+
+      <div class="p-item">
+        <div class="p-meta">Georgia Tech<span class="yr">Undergraduate Research</span></div>
+        <div class="p-body">
+          <h3>4H-SiC MEMS Gyroscope Fabrication</h3>
+          <p>Fabricated MEMS gyroscopes in silicon carbide &mdash; a material suited to harsh, high-temperature environments &mdash; operating 36 cleanroom tools across lithography, deposition, etching, and related fabrication steps. The finished devices reached Q-factors above 5 million at 3&nbsp;MHz.</p>
+          <p class="p-links"><a href="https://nnci.net/sites/default/files/C17Campassi%2CMarcela.pdf">Research paper (PDF)</a> &middot; <a href="mems-poster.pdf">Conference poster (PDF)</a></p>
+          <div class="tags"><span class="tag">cleanroom fab</span><span class="tag">MEMS</span><span class="tag">process docs</span></div>
+        </div>
+      </div>
+
+      <div class="p-item">
+        <div class="p-meta">MSU CAVS<span class="yr">Undergraduate Research</span></div>
+        <div class="p-body">
+          <h3>Embedded Sensor Integration</h3>
+          <p>Built a micro-ROS sensor node on a Renesas RA6M5 (ARM Cortex-M33) that reads three I&sup2;C sensors and publishes them as structured ROS 2 topics over a USB-CDC transport, so the microcontroller shows up on the ROS 2 network as a first-class node instead of printing raw serial text. Work included the FreeRTOS integration, a custom USB transport, a global allocator override, and cross-compiling the micro-ROS client library for the M33.</p>
+          <div class="tags"><span class="tag">micro-ROS / ROS 2</span><span class="tag">FreeRTOS</span><span class="tag">I&sup2;C</span><span class="tag">embedded C</span><span class="tag">USB-CDC</span></div>
+          <p class="p-links"><a href="microros-guide.pdf">Build &amp; debug guide (PDF)</a></p>
+        </div>
+      </div>
+
+      <div class="p-item">
+        <div class="p-meta">AM Lab<span class="yr">In progress</span></div>
+        <div class="p-body">
+          <h3>6-Axis Robotic Arm</h3>
+          <p>Bringing up an open-loop 6-axis robotic arm inherited partly built. The electronics use an Arduino Mega, two CNC Shield V3 boards, six TMC2209 stepper drivers, and hall-effect sensors for homing, running 6-axis GRBL firmware. Current work covers driver configuration, wiring, and calibration.</p>
+          <div class="tags"><span class="tag">stepper control</span><span class="tag">GRBL</span><span class="tag">motion control</span><span class="tag">system bring-up</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="skills-sec">
+  <div class="wrap">
+    <div class="sec-head">Toolkit</div>
+    <div class="skill-grid">
+      <div><span class="s-k">Programming</span>Python, MATLAB, C, C++, PIC24 Assembly, Verilog, KUKA</div>
+      <div><span class="s-k">Software &amp; tools</span>MPLAB, e2 studio, Quartus, Multisim, AutoCAD, Tera Term, Wolfram, ROS1/ROS2, micro-ROS</div>
+      <div><span class="s-k">Lab &amp; hardware</span>Cleanroom fabrication, sensor integration, soldering, troubleshooting, electrical wiring</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <span>&copy; 2026 Marcela Campassi</span>
+      <span>Starkville, Mississippi</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
