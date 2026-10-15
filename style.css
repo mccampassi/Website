@@ -153,3 +153,4 @@ footer{padding:40px 0;border-top:1px solid var(--line)}
 .p-links{font-family:var(--mono);font-size:.78rem;margin-top:2px}
 .p-links a{color:var(--ink);text-decoration:underline;text-underline-offset:2px}
 .p-links a:hover{color:var(--mist)}
+.p-note{font-size:.8rem;color:var(--mist);font-style:italic;margin-top:-6px}
